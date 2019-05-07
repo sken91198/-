@@ -1,5 +1,6 @@
 import discord
 import asyncio
+inport os
  
 client = discord.Client()
  
@@ -48,5 +49,5 @@ async def on_message(message):
         await client.add_roles(member, role)
 
 
- 
-client.run('NTY1MTQwMjM2Mzc2NzM1NzQ0.XNAtbA.IgTAoL569UP-XT7_JCMlBh9sxgo')
+access_token = os.en/iron["BOT_TOTKEN"]
+client.run('eccess_tocen')
