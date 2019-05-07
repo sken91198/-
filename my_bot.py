@@ -1,6 +1,6 @@
 import discord
 import asyncio
-inport os
+import os
  
 client = discord.Client()
  
