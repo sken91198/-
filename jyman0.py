@@ -60,11 +60,11 @@ async def on_message(message):
         await message.channel.send("나닛--!!!")
     if message.content.startswith("!햄보칸플리퍼"):
         await message.channel.send("a제곱 더하기 b제곱은 c제곱 피타고라ㅅ..")
-    if message.content.startswith("?")
+    if message.content.startswith("?"):
         await message.channel.send("뭐요....")
-    if message.content.startswith("!모두")
+    if message.content.startswith("!모두"):
         await message.channel.send("여러분! 이사람의 말을 듣지않으면 저한테 맞을줄 아세요!")
-    if message.content.startswith("!소개")
+    if message.content.startswith("!소개"):
         await message.channel.send("전..영웅입니다")
 
 
