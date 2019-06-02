@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("·Î±×ÀÎ Áß...")
+    print("ë¡œê·¸ì¸ ì¤‘...")
     print(client.user.name)
     print(client.user.id)
     print("================")
@@ -13,61 +13,60 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("!¾È³ç"):
-        await message.channel.send("¾È³ç! ³­ ÁØ¿µ¸ÇÀÌ¾ß!")
-        await message.channel.send("ÇÊ¿äÇÑ°Ô ÀÖ´Ù¸é !¿¡ µµ¿òÀ» ÀÔ·ÂÇØÁà!")      
-    if message.content.startswith("!µµ¿ò"):
-        await message.channel.send("³»°¡ µµ¿ÍÁÖÁö!")
-        await message.channel.send("°£µå¾Æ!!!!!!!!!!")
-        await message.channel.send("Âü°í·Î Á¦ÀÛÀÚ´Â jyman0ÀÔ´Ï´Ù.")                                                                  
-    if message.content.startswith("!¹Ùº¸"):
-        await message.channel.send("Èï!")                                  
-    if message.content.startswith("!ÀÌ½ºÅÍ¿¡±×"):
-        await message.channel.send("À½...³ªµµ ¸ô¶ó.")
-        await message.channel.send("ÇÏÁö¸¸ Á¦ÀÛÀÚ´Â ¾ËÁöµµ?")                                
-    if message.content.startswith("!¸ÛÃ»ÀÌ"):
-        await message.channel.send("Èï!")
-    if message.content.startswith("!³ªÀÌ"):
-        await message.channel.send("³ªÀÌ? ³ªÀÌ°¡ ¹¹¾ß? ¸Ô´Â°Ç°¡?")
-        await message.channel.send("Á¦ÀÛÀÚ: 12»ìÀÔ´Ï´Ù.")
-        await message.channel.send("¤·¤¾!")
-    if message.content.startswith("!Á¦ÀÛÀÚ"):
-        await message.channel.send("jyman0 ÀÔ´Ï´Ù.")
-    if message.content.startswith("!¼ºº°"):
-        await message.channel.send("±×·±°Ô ¿Ö Áß¿äÇØ!")
-    if message.content.startswith("!¸Ş·Õ"):
-        await message.channel.send("Èï!")
-    if message.content.startswith("!¿Í"):
-        await message.channel.send("¿Í! »÷Áî! ÆÄÇÇ·ç½º!")
-        await message.channel.send("¾Æ~ ¾ğ´õÅ×ÀÏ ¾Æ½Ã´Â±¸³ª~")
-        await message.channel.send("Âü°í·Î °Ì.³ª.¾î.·Æ.½À.´Ï.´Ù.")
-        await message.channel.send(".. ¶ó°í ÇÏ³×¿©")
-    if message.content.startswith("!¤¾¤·"):
-        await message.channel.send("¤¾¤·~")
-    if message.content.startswith("!½Ç¸í"):
-        await message.channel.send("±×°Ç ¹Ù·Î &*^*^*&*&(ÀÔ¸·±â)")
+    if message.content.startswith("!ì•ˆë…•"):
+        await message.channel.send("ì•ˆë…•! ë‚œ ì¤€ì˜ë§¨ì´ì•¼!")
+        await message.channel.send("í•„ìš”í•œê²Œ ìˆë‹¤ë©´ !ì— ë„ì›€ì„ ì…ë ¥í•´ì¤˜!")      
+    if message.content.startswith("!ë„ì›€"):
+        await message.channel.send("ë‚´ê°€ ë„ì™€ì£¼ì§€!")
+        await message.channel.send("ê°„ë“œì•„!!!!!!!!!!")
+        await message.channel.send("ì°¸ê³ ë¡œ ì œì‘ìëŠ” jyman0ì…ë‹ˆë‹¤.")                                                                  
+    if message.content.startswith("!ë°”ë³´"):
+        await message.channel.send("í¥!")                                  
+    if message.content.startswith("!ì´ìŠ¤í„°ì—ê·¸"):
+        await message.channel.send("ìŒ...ë‚˜ë„ ëª°ë¼.")
+        await message.channel.send("í•˜ì§€ë§Œ ì œì‘ìëŠ” ì•Œì§€ë„?")                                
+    if message.content.startswith("!ë©ì²­ì´"):
+        await message.channel.send("í¥!")
+    if message.content.startswith("!ë‚˜ì´"):
+        await message.channel.send("ë‚˜ì´? ë‚˜ì´ê°€ ë­ì•¼? ë¨¹ëŠ”ê±´ê°€?")
+        await message.channel.send("ì œì‘ì: 12ì‚´ì…ë‹ˆë‹¤.")
+        await message.channel.send("ã…‡ã…!")
+    if message.content.startswith("!ì œì‘ì"):
+        await message.channel.send("jyman0 ì…ë‹ˆë‹¤.")
+    if message.content.startswith("!ì„±ë³„"):
+        await message.channel.send("ê·¸ëŸ°ê²Œ ì™œ ì¤‘ìš”í•´!")
+    if message.content.startswith("!ë©”ë¡±"):
+        await message.channel.send("í¥!")
+    if message.content.startswith("!ì™€"):
+        await message.channel.send("ì™€! ìƒŒì¦ˆ! íŒŒí”¼ë£¨ìŠ¤!")
+        await message.channel.send("ì•„~ ì–¸ë”í…Œì¼ ì•„ì‹œëŠ”êµ¬ë‚˜~")
+        await message.channel.send("ì°¸ê³ ë¡œ ê².ë‚˜.ì–´.ë µ.ìŠµ.ë‹ˆ.ë‹¤.")
+        await message.channel.send(".. ë¼ê³  í•˜ë„¤ì—¬")
+    if message.content.startswith("!ã…ã…‡"):
+        await message.channel.send("ã…ã…‡~")
+    if message.content.startswith("!ì‹¤ëª…"):
+        await message.channel.send("ê·¸ê±´ ë°”ë¡œ &*^*^*&*&(ì…ë§‰ê¸°)")
     if message.content.startswith("!jyman0"):
-        await message.channel.send("jyman0: Àú ºÒ·¶¾î¿ä?")
-    if message.content.startswith("!¹è±×"):
-        await message.channel.send("ÅÁÅÁÅÁÅÁ! À¸¾Ç »ç¶÷ÀÌ´Ù (»ç¸Á)")
-    if message.content.startswith("!¹èÆ²±×¶ó¿îµå"):
-        await message.channel.send("ÅÁÅÁÅÁÅÁ! À¸¾Ç »ç¶÷ÀÌ´Ù (»ç¸Á)")
-    if message.content.startswith("!·¹ÀÎº¸¿ì½Ä½º"):
-        await message.channel.send("±×°Ô ¸ÓÀÓ?")
-    if message.content.startswith("!·¹½Ä"):
-        await message.channel.send("±×°Ô ¸ÓÀÓ?")
-    if message.content.startswith("!³ª´Ö"):
-        await message.channel.send("³ª´Ö--!!!")
-    if message.content.startswith("!ÇÜº¸Ä­ÇÃ¸®ÆÛ"):
-        await message.channel.send("aÁ¦°ö ´õÇÏ±â bÁ¦°öÀº cÁ¦°ö ÇÇÅ¸°í¶ó¤µ..")
+        await message.channel.send("jyman0: ì € ë¶ˆë €ì–´ìš”?")
+    if message.content.startswith("!ë°°ê·¸"):
+        await message.channel.send("íƒ•íƒ•íƒ•íƒ•! ìœ¼ì•… ì‚¬ëŒì´ë‹¤ (ì‚¬ë§)")
+    if message.content.startswith("!ë°°í‹€ê·¸ë¼ìš´ë“œ"):
+        await message.channel.send("íƒ•íƒ•íƒ•íƒ•! ìœ¼ì•… ì‚¬ëŒì´ë‹¤ (ì‚¬ë§)")
+    if message.content.startswith("!ë ˆì¸ë³´ìš°ì‹ìŠ¤"):
+        await message.channel.send("ê·¸ê²Œ ë¨¸ì„?")
+    if message.content.startswith("!ë ˆì‹"):
+        await message.channel.send("ê·¸ê²Œ ë¨¸ì„?")
+    if message.content.startswith("!ë‚˜ë‹›"):
+        await message.channel.send("ë‚˜ë‹›--!!!")
+    if message.content.startswith("!í–„ë³´ì¹¸í”Œë¦¬í¼"):
+        await message.channel.send("aì œê³± ë”í•˜ê¸° bì œê³±ì€ cì œê³± í”¼íƒ€ê³ ë¼ã……..")
     if message.content.startswith("?")
-        await message.channel.send("¹¹¿ä....")
-    if message.content.startswith("!¸ğµÎ")
-        await message.channel.send("¿©·¯ºĞ! ÀÌ»ç¶÷ÀÇ ¸»À» µèÁö¾ÊÀ¸¸é ÀúÇÑÅ× ¸ÂÀ»ÁÙ ¾Æ¼¼¿ä!")
-    if message.content.startswith("!¼Ò°³")
-        await message.channel.send("Àü..¿µ¿õÀÔ´Ï´Ù")
+        await message.channel.send("ë­ìš”....")
+    if message.content.startswith("!ëª¨ë‘")
+        await message.channel.send("ì—¬ëŸ¬ë¶„! ì´ì‚¬ëŒì˜ ë§ì„ ë“£ì§€ì•Šìœ¼ë©´ ì €í•œí…Œ ë§ì„ì¤„ ì•„ì„¸ìš”!")
+    if message.content.startswith("!ì†Œê°œ")
+        await message.channel.send("ì „..ì˜ì›…ì…ë‹ˆë‹¤")
 
 
         
-access_token = os.environ["BOT_TOKEN"]    
-client.run(access_token)
+client.run("NTgxMzgwNTc5NzAyODY1OTUw.XOe-Qw.XAKJkfUcIYFCoSwDfrlkyu07zPw")
