@@ -45,6 +45,18 @@ async def on_message(message):
         await client.send_message(message.channel, 'ip받아오는중.................:192.168.0.7')
         await client.send_message(message.channel, '동적 IP:122.255.123.236')
         await client.send_message(message.channel, '안티버스 프로그램 가동:온라인 안전하고 즐거운 하루 보내십시오')
+    if message.content.startswith('!총괄'):
+    	roll = '@총 관리자 {0.author.mention}님이 총관리자님들을 부릅니다!'.format(message)
+    if message.content.startswith('!개발'):
+    	roll = '@개발자 {0.author.mention}님이 개발자님들을 부릅니다!'.format(message)
+    if message.content.startswith('!시보'):
+    	roll = '@시보 {0.author.mention}님이 시보들을 부릅니다!'.format(message)
+    if message.content.startswith('!삼성'):
+    	roll = '@SAMSUNG 삼성그룹 {0.author.mention}님이 삼성그룹을 부릅니다!'.format(message)
+    if message.content.startswith('!입국'):
+    	roll = '@개발자 {0.author.mention}님이 입국자님들을 부릅니다!'.format(message)
+    if message.content.startswith('!칠성신'):
+    	roll = '@칠성 신 [북극성을 담당] {0.author.mention}님이 북국성을 담당님을 부릅니다!'.format(message)
 
  
 
