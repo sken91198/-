@@ -57,7 +57,7 @@ async def on_message(message):
     	roll = '@개발자 {0.author.mention}님이 입국자님들을 부릅니다!'.format(message)
     if message.content.startswith('!칠성신'):
     	roll = '@칠성 신 [북극성을 담당] {0.author.mention}님이 북국성을 담당님을 부릅니다!'.format(message)
-    if message.content.startswith("/start"):
+    if message.content.startswith("!start"):
         while True:
             print("원격메시지")
             desktop = input("입력해주세요")
