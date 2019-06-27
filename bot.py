@@ -7,15 +7,16 @@ async def on_ready():
     print('접속 중입니다')
     print(client.user.name)
     print(client.user.id)
-    print('------')
-    
-    await client.change_presence(game=discord.Game(name="서버 지키미v 1.0", type=1))    
 
 
 
 
 @client.event
 async def on_message(message):
+    if message.content.startswith("!소개"):
+        await mesaage.channel.send("windows 디팬더에 있는 기능들입니다.
+    
+
     
 
  
