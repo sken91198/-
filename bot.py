@@ -14,9 +14,9 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith("!소개"):
-        await mesaage.channel.send("windows 디팬더에 있는 기능들입니다.")
-        await import.channel.send("2547EC385920675E0F.jpeg-1.jpg")
-    
+        await mesaage.channel.send("xnbox 스튜디오에 있는 프로젝트를 알려드립니다.")
+    if message.content.startswith("!스토어")
+        await message.channel.send("xnbox 웹페이지 스토어입니다)
 
     
 
