@@ -15,8 +15,8 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith("!소개"):
         await mesaage.channel.send("xnbox 스튜디오에 있는 프로젝트를 알려드립니다.")
-    if message.content.startswith("!스토어")
-        await message.channel.send("xnbox 웹페이지 스토어입니다)
+    if message.content.startswith("!스토어"):
+        await message.channel.send("xnbox 웹페이지 스토어입니다")
 
     
 
